@@ -1,22 +1,35 @@
-# Graffiti 311 Report Analysis (San Francisco, September 2017)
+# San Francisco 311 Graffiti Report Analysis (September 2017)
 
 ## Overview
-The data for this analysis comes from the San Francisco Open Data Portal (DataSF), specifically 311 graffiti reports from September 2017. The dataset is generated through the city’s 311 system, which is used for residents, business owners, and city workers to report issues that require city services via phone, website, or mobile app. While it is an official government record and generally reliable, it reflects service requests rather than actual conditions on the ground. This means it is shaped by reporting behavior, so neighborhoods with more active users or higher visibility may appear to have more graffiti than they actually do. It also does not capture severity or scale, since all reports are counted equally regardless of size, and it only represents a single month, which limits any long-term conclusions.
+
+The data for this analysis comes from the San Francisco Open Data Portal (DataSF), specifically 311 graffiti reports from September 2017. This comes from the city’s 311 system, where residents, business owners, and city workers report graffiti through the app, website, or phone.
+
+Since it is an official city dataset, it is generally reliable, but it only captures what gets reported, not what actually exists. This means neighborhoods with more active reporting or higher visibility can look like they have more graffiti than they actually do. It also does not show severity, since a small sticker and a large mural are counted the same, and it only reflects one month of data, which limits long-term conclusions.
 
 ## Analysis
-In my analysis, I used pivot tables to explore which neighborhoods and property types had the highest number of 311 graffiti reports in San Francisco for September 2017. The Mission District stood out by a significant margin, with far more cases than any other neighborhood, followed by South of Market. I also noticed that commercial buildings, street poles, and mailboxes were some of the most commonly reported surfaces. At the same time, I found a large portion of the dataset grouped under an “Other” category, which made me question how consistently these reports are actually being categorized. It feels like there are limitations in how the data is processed on the backend where certain reports do not neatly fit into predefined labels and end up being lumped together, which makes the dataset feel less precise than it first appears.
 
-What stood out to me most is that these patterns do not necessarily mean there is “more” graffiti in certain neighborhoods. Instead, what I am really seeing is differences in visibility, reporting behavior, and how people interact with the 311 system. The Mission and SoMa are both high-traffic, highly visible areas with a mix of residents, businesses, and public infrastructure, which naturally leads to more opportunities for reporting. So the data reflects not just graffiti itself, but also who is reporting and where attention is concentrated.
+In my analysis, I used pivot tables to see which neighborhoods and property types had the most reports. The Mission District stood out by a lot, with far more cases than anywhere else, followed by South of Market.
+
+I also noticed commercial buildings, street poles, and mailboxes showing up most often. At the same time, a large portion of the dataset was grouped into an “Other” category, which made me think the classification system is not very consistent. It feels like some reports do not fit neatly into categories, so they get placed into a catch-all group, which makes the dataset less precise than it first appears.
 
 ## Interpretation
-This is where the data can be misleading if interpreted at face value. The Mission having the highest number of reports could easily be read as evidence of higher levels of graffiti or neighborhood decline, but that interpretation does not account for what the dataset is actually measuring. These numbers reflect reported incidents, not total incidents, meaning they are shaped by visibility, reporting behavior, and differences in how often people use the 311 system. As a result, the data may reflect where issues are most frequently observed and documented rather than where they are most severe.
 
-At the same time, the dataset is still useful, but for a different reason than a simple ranking of neighborhoods. It highlights patterns of civic attention and reporting behavior, showing where infrastructure is most actively monitored and where residents or businesses are more engaged with city reporting systems. This shifts the interpretation from “where graffiti is worst” to “where graffiti is most likely to be reported and recorded.”
+What stood out to me most is that this does not necessarily mean there is more graffiti in those neighborhoods. It feels more like differences in visibility and reporting behavior. The Mission and SoMa are both dense, high-traffic areas with a mix of housing, businesses, and public infrastructure, so there are more chances for people to notice and report issues.
 
-## Limitations & Further Analysis
-To make this analysis stronger, I would need more context on how 311 data is actually processed, especially why so many reports end up in “Other” and whether that is a classification issue or a reporting limitation. It would also help to talk to Public Works to understand how these reports translate into real cleanup work and whether what gets reported matches what gets prioritized. The main limitation of this dataset is the time frame. Looking at only September 2017 makes it hard to know if these patterns are consistent or just a snapshot from one month. Expanding this to multiple months or years would make the trends more reliable.
+So the dataset reflects what people are paying attention to, not just what is physically there.
 
-I would also want to look at whether there are differences in response times or cleanup across neighborhoods, since higher reporting does not necessarily mean faster or better service. Finally, comparing this data with things like land use, commercial density, or income could help explain why reporting is concentrated in certain areas.
+This is where the data can be misleading. It would be easy to look at the Mission having the highest numbers and assume it is more neglected or worse off, but that ignores what the data is actually measuring. These are reports, not total incidents, so the numbers depend heavily on what gets noticed and reported.
+
+## Limitations
+
+At the same time, the dataset is still useful, but not as a simple ranking of neighborhoods. It shows patterns of attention and reporting, and where people are more likely to use the 311 system.
+
+To make this analysis stronger, I would want more context on how 311 data is processed, especially why so many reports end up in “Other.” I would also want to talk to Public Works to understand how these reports translate into cleanup work and whether certain areas are prioritized differently.
+
+I also think one month of data is too limited. September 2017 could just be a snapshot, so it is hard to know if the patterns actually hold over time. Looking at multiple months or years would make the trends more reliable.
+
+I would also want to compare response times across neighborhoods, since higher reporting does not necessarily mean better service. Finally, comparing this with land use, commercial density, or income could help explain why reporting is concentrated in certain areas.
 
 ## Conclusion
-Overall, the key limitation of this dataset is that it captures reporting activity rather than a direct measure of graffiti itself. Any conclusions about neighborhood conditions need to account for these structural and behavioral factors in how the data is produced.
+
+Overall, this dataset is less about actual graffiti levels and more about reporting behavior, visibility, and what people choose to notice and document.
